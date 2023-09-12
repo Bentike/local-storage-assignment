@@ -24,7 +24,9 @@ h1 {
 }
 
 h2 {
-    color: #555;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: rgb(208, 19, 50);
 }
 
 form {
@@ -41,16 +43,18 @@ input {
 }
 
 button {
-    margin-top: 10px;
     padding: 10px;
-    background-color: #007bff;
+    background-color: rgb(159, 64, 80);
     color: #fff;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    width: 20%;
+    margin: 10px auto;
+    transition: all ease-in-out .3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: rgb(140, 69, 81);
 }
