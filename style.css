@@ -1,22 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: pink;
     margin: 0;
     padding: 0;
 }
 
 .container {
     text-align: center;
-    margin: 20px auto;
     padding: 20px;
-    width: 300px;
-    background-color: #fff;
+    width: 60%;
+    margin: 30px auto;
+    background-color: rgb(210, 120, 135);
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-    color: #333;
+    color: #fff;
 }
 
 .form-container {
