@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const username = document.getElementById("login-username").value;
         const password = document.getElementById("login-password").value;
 
-        // Check if username exists and the password is correct
+        // validate user credentials.
         const storedPassword = localStorage.getItem(username);
 
         if (storedPassword === null) {
