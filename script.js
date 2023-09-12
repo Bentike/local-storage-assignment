@@ -1,28 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const signupForm = document.getElementById("signup-form");
-    const loginForm = document.getElementById("login-form");
+    const signup = document.getElementById("signup");
+    const login = document.getElementById("login");
 
-    // Signup logic
-    signupForm.addEventListener("submit", function (e) {
+    // logic Responsible For Signin up Users.
+    signup.addEventListener("submit", function (e) {
         e.preventDefault();
         const username = document.getElementById("signup-username").value;
         const password = document.getElementById("signup-password").value;
 
-        // Check if username already exists in localStorage
+        // Check if username already exists in localStorage.
         if (localStorage.getItem(username)) {
             alert("Username already exists. Please choose a different one.");
         } else {
-            // Store username and password in localStorage
+            // Store username and password in localStorage if user does not exist.
             localStorage.setItem(username, password);
             alert("Signup successful! You can now login.");
         }
 
         // Clear signup form
-        signupForm.reset();
+        signup.reset();
     });
 
     // Login logic
-    loginForm.addEventListener("submit", function (e) {
+    login.addEventListener("submit", function (e) {
         e.preventDefault();
         const username = document.getElementById("login-username").value;
         const password = document.getElementById("login-password").value;
@@ -39,6 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Clear login form
-        loginForm.reset();
+        login.reset();
     });
 });
