@@ -35,11 +35,12 @@ form {
 }
 
 input {
-    margin: 5px 0;
+    margin: 10px 0;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 16px;
+    outline: none;
 }
 
 button {
